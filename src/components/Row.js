@@ -29,7 +29,6 @@ function Row({ title, id, fetchUrl, isLargeRow }) {
     setModalOpen(true);
     setMovieSelected(movie);
   };
-
   return (
     <section className='row'>
       <h2>{title}</h2>
@@ -57,17 +56,9 @@ function Row({ title, id, fetchUrl, isLargeRow }) {
         navigation // arrow 버튼 사용 유무
         pagination={{ clickable: true }} // 페이지 버튼 보이게 할지
       >
-        {/* <div className='slider'> */}
-        {/* <div
-            className='slider__arrow left'
-            onClick={() => {
-              document.getElementById(id).scrollLeft += window.innerWidth - 80;
-            }}>
-            <span className='arrow'>{'<'}</span>
-          </div> */}
         <div id={id} className='row__posters'>
           {movies.map((movie) => (
-            <SwiperSlide>
+            <SwiperSlide key={movie.id}>
               <img
                 src={`https://image.tmdb.org/t/p/original/${
                   isLargeRow ? movie.poster_path : movie.backdrop_path
@@ -81,14 +72,6 @@ function Row({ title, id, fetchUrl, isLargeRow }) {
             </SwiperSlide>
           ))}
         </div>
-        {/* <div
-            className='slider__arrow right'
-            onClick={() => {
-              document.getElementById(id).scrollLeft -= window.innerWidth - 80;
-            }}>
-            <span className='arrow'>{'>'}</span>
-          </div> */}
-        {/* </div> */}
       </Swiper>
       {modalOpen && <MovieModal {...movieSelected} setModalOpen={setModalOpen} />}
     </section>

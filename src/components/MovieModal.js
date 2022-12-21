@@ -21,7 +21,7 @@ function MovieModal({
   useOnClickOutside(ref, () => {
     setModalOpen(false);
   });
-  
+
   return (
     <div className='presentation'>
       <div className='wrapper-modal'>
@@ -39,8 +39,8 @@ function MovieModal({
             X
           </span>
           <div className='modal__content'>
+            <h2 className='modal__title'>{title ? title : name}</h2>
             <p className='modal__details'>
-              <h2 className='modal__title'>{title ? title : name}</h2>
               {release_date ? release_date : first_air_date}
               <span className='modal__user_perc'>100% 일치</span>
             </p>

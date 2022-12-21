@@ -35,13 +35,13 @@ function SearchPage() {
   const fetchSearchMovie = async (searchTerm) => {
     try {
       const request = await axios.get(`/search/multi?include_adult=false&query=${searchTerm}`);
-      console.log(request);
+      // console.log(request);
       setSearchResults(request.data.results);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   };
-  console.log(searchResults);
+  // console.log(searchResults);
 
   const renderSearchResults = () => {
     return searchResults.length > 0 ? ( // 검색어가 있는지 삼항연산자 사용

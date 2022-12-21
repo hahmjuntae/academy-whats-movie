@@ -52,7 +52,7 @@ function Banner() {
       <header
         className='banner'
         style={{
-          backgroundImage: `url('https://image.tmdb.org/t/p/original/${movie?.backdrop_path}')`,
+          backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie?.backdrop_path})`,
           backgroundPosition: 'top center',
           backgroundSize: 'cover',
         }}>
@@ -92,7 +92,9 @@ function Banner() {
             </>
           ) : (
             <div className='close_video'>
-              <span className='videoNone-close' onClick={() => setIsClicked(false)}>닫기 X</span>
+              <span className='videoNone-close' onClick={() => setIsClicked(false)}>
+                닫기 X
+              </span>
               <div className='videoNone'>등록된 영상이 없습니다.</div>
             </div>
           )}
