@@ -1,15 +1,22 @@
 /* Row.css */
 .row {
-  margin-left: 20px;
+  padding-left: 20px;
   color: #000;
+  border-bottom: 1px solid #bbb;
+}
+.row:first-of-type{
+  margin-top: 100px;
 }
 h2 {
-  margin: 0 20px 5px;
+  margin: 20px 20px 5px;
+  text-align: center;
+  font-size: 30px;
 }
 .slider {
   position: relative;
-  padding: 0 0px;
+  padding: 0
 }
+
 .row__poster {
   width: 100%;
   height: 100%;

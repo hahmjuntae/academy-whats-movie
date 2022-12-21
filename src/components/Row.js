@@ -38,12 +38,12 @@ function Row({ title, id, fetchUrl, isLargeRow }) {
         loop={true} // loop 기능 사용 여부
         breakpoints={{
           1378: {
-            slidesPerView: 6, // 한 번에 보이는 슬라이드 개수
-            slidesPerGroup: 6, // 몇개씩 슬라이드 할지
+            slidesPerView: 8, // 한 번에 보이는 슬라이드 개수
+            slidesPerGroup: 8, // 몇개씩 슬라이드 할지
           },
           998: {
-            slidesPerView: 5,
-            slidesPerGroup: 5,
+            slidesPerView: 6,
+            slidesPerGroup: 6,
           },
           625: {
             slidesPerView: 4,

@@ -92,7 +92,7 @@ function Banner() {
             </>
           ) : (
             <div className='close_video'>
-              <span onClick={() => setIsClicked(false)}>닫기 X</span>
+              <span className='videoNone-close' onClick={() => setIsClicked(false)}>닫기 X</span>
               <div className='videoNone'>등록된 영상이 없습니다.</div>
             </div>
           )}
@@ -115,12 +115,12 @@ const HomeContainer = styled.div`
   height: 100%;
 `;
 const Iframe = styled.iframe`
+  padding-top: 5rem;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background-color: #111;
-  z-index: -1;
-  opacity: 0.65;
+  background-color: #000;
+  z-index: 0;
   border: none;
   &::after {
     content: '';

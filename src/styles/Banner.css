@@ -68,7 +68,7 @@
   background-image: linear-gradient(
     to top,
     rgba(238, 238, 238, 1) 0%,
-    rgba(238, 238, 238, 0) 20%,
+    rgba(238, 238, 238, 0) 50%,
     rgba(238, 238, 238, 0) 100%
   );
 }
@@ -76,18 +76,19 @@
   position: relative;
   top: 50%;
   width: 100%;
-  color: #fff;
+  color: #000;
   text-align: center;
-  transform: translateY(-50%);
+  transform: translateY(-250px);
+}
+.videoNone-close{
+  color: #000;
 }
 .close_video {
-  position: relative;
-  bottom: 50px;
+  position: absolute;
+  top: 560px;
   width: 100%;
-  padding-bottom: 25px;
-  background: linear-gradient(0deg, #111, transparent);
+  padding-left: 30px;
   color: #fff;
-  text-indent: 25px;
 }
 .close_video > span {
   cursor: pointer;

@@ -2,6 +2,7 @@
 .presentation {
   position: absolute;
   z-index: 1200;
+  color: #000;
 }
 .wrapper-modal {
   position: fixed;
@@ -42,11 +43,15 @@
   visibility: hidden;
 }
 .modal-close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  float: right;
+  padding: 15px 25px 0 0;
+  color: #000;
+  font-size: 30px;
   z-index: 1000;
   cursor: pointer;
+}
+.modal-close:hover{
+  color: #ee5a24;
 }
 .modal__poster-img {
   width: 100%;
@@ -57,9 +62,11 @@
 }
 .modal__details {
   font-size: 18px;
+  margin: 15px 0;
 }
 .modal__user_perc {
   color: #46d369;
+  margin-left: 15px;
 }
 .modal__title {
   margin: 16px 0;
