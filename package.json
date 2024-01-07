@@ -47,7 +47,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://hahmjuntae.github.io/project-whats-movie",
+  "homepage": "https://hahmjuntae.github.io/academy-whats-movie",
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.4.0",
     "gh-pages": "^4.0.0"
